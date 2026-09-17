@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Material educativo y servicios de diseño y tecnología.">
+    <title>YMCH | Tutor</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- FONDO ANIMADO TECNOLÓGICO -->
+    <div class="tech-bg"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/images/logo.png" alt="YMCH Logo" onerror="this.style.display='none'">
+                <span>YMCH</span>
+            </a>
+            <button class="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#materiales">Materiales</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="hero-text fade-in">
+                <h1><span class="dynamic-name">YMCH</span></h1>
+                <h2 class="dynamic-title">Tutor apasionado de la tecnología</h2>
+                <p class="dynamic-subtitle">Material educativo, recursos y soluciones digitales para aprender, crear y desarrollar nuevas habilidades.</p>
+                <div class="hero-buttons">
+                    <a href="#materiales" class="btn btn-primary">Explorar Materiales</a>
+                    <a href="#contacto" class="btn btn-secondary">Contactar</a>
+                </div>
+            </div>
+            <div class="hero-image fade-in">
+                <img src="assets/images/perfil.png" alt="YMCH Tutor" onerror="this.src='https://via.placeholder.com/450x500/171717/6366F1?text=Tu+Imagen'">
+            </div>
+        </div>
+    </header>
+
+    <!-- SECCIÓN DE ACCESO A MATERIALES POR CONTRASEÑA -->
+    <section id="materiales" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Materiales Educativos</h2>
+            <p class="section-subtitle fade-in">Selecciona una categoría e ingresa la contraseña de acceso para explorar los recursos.</p>
+            
+            <div class="categories-grid">
+                <!-- OFIMÁTICA -->
+                <div class="category-card fade-in" onclick="accederCategoria('Ofimática', 'Ymch_OO', 'ofimatica.html')">
+                    <div class="category-icon">💻</div>
+                    <h3>Operador en Ofimática</h3>
+                    <p>Windows, Word, Excel, PowerPoint, Publisher.</p>
+                    <span class="btn btn-secondary">Acceder</span>
+                </div>
+
+                <!-- DISEÑO GRÁFICO -->
+                <div class="category-card fade-in" onclick="accederCategoria('Diseño Gráfico', 'Ymch_DG', 'diseno.html')">
+                    <div class="category-icon">🎨</div>
+                    <h3>Diseño Gráfico</h3>
+                    <p>CorelDRAW, Photoshop, Illustrator, InDesign.</p>
+                    <span class="btn btn-secondary">Acceder</span>
+                </div>
+
+                <!-- DISEÑO WEB -->
+                <div class="category-card fade-in" onclick="accederCategoria('Diseño Web', 'Ymch_DW', 'web.html')">
+                    <div class="category-icon">🌐</div>
+                    <h3>Diseño Web</h3>
+                    <p>HTML, CSS, PHP, WordPress.</p>
+                    <span class="btn btn-secondary">Acceder</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE SERVICIOS UNIFICADA -->
+    <section id="servicios" class="section" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="section-title fade-in">Servicios Profesionales</h2>
+            <p class="section-subtitle fade-in">Soluciones integrales adaptadas a tus necesidades.</p>
+            
+            <div class="service-unified-card fade-in">
+                <h3>Diseño y Tecnología a tu Medida</h3>
+                <p>Ofrezco soluciones creativas y técnicas para potenciar tus proyectos. Mis servicios incluyen: Diseño de flyers y banners, publicidad optimizada para redes sociales, creación de presentaciones PowerPoint profesionales, edición y retoque de fotografías, y otros servicios de diseño personalizados.</p>
+                
+                <div class="service-list">
+                    <span class="service-tag">Flyers</span>
+                    <span class="service-tag">Banners</span>
+                    <span class="service-tag">Redes Sociales</span>
+                    <span class="service-tag">PowerPoint</span>
+                    <span class="service-tag">Edición Fotográfica</span>
+                </div>
+
+                <a href="#" class="btn btn-whatsapp" data-wa-context="servicio-general" style="font-size: 1.1rem; padding: 16px 32px;">
+                    Solicitar Servicio por WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section">
+        <div class="container contact-container">
+            <h2 class="section-title fade-in">Contacto</h2>
+            <p class="section-subtitle fade-in">¿Necesitas un material, un servicio de diseño o quieres realizar una consulta?</p>
+            
+            <div class="contact-info fade-in">
+                <div class="contact-item">
+                    <span>📱</span>
+                    <a href="#" class="btn btn-whatsapp" data-wa-context="consulta">WhatsApp: +591 61283454</a>
+                </div>
+                <div class="contact-item">
+                    <span>✉️</span>
+                    <a href="mailto:Yerkomch@gmail.com">Yerkomch@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="assets/images/logo.png" alt="YMCH Logo" onerror="this.style.display='none'">
+                <span>YMCH | Tutor</span>
+            </div>
+            <p style="color: var(--text-secondary); max-width: 400px;">Aprender, crear y compartir conocimiento.</p>
+            <div class="footer-links">
+                <a href="index.html">Inicio</a>
+                <a href="#materiales">Materiales</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 YMCH | Tutor. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/materiales.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
